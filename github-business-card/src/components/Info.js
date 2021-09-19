@@ -1,5 +1,4 @@
-
-import React, { Component } from 'react';
+import React from 'react';
 import '../App.css';
 
 export default function Info(props){
@@ -10,10 +9,10 @@ export default function Info(props){
             <h1>{props.name}</h1>
             <p><span>Location</span> |  {props.location}</p>
             <p><span>Socials</span> |  @{props.twitter}</p>
-            <p><a href={props.url}>My Github </a></p>
+            <p>
+                <span>Github</span> |  
+                <a href={props.url} className='a-span'> Retrofitt </a>
+            </p>
         </div>
-        
-
-
     </div>);
 }

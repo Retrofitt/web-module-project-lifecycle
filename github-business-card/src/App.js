@@ -26,7 +26,6 @@ class App extends Component{
           bio: res.data.bio,
           twitter_username: res.data.twitter_username
         })
-        console.log(this.state)
       })
       .catch(err=>{
         console.log(err)
